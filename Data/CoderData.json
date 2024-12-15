@@ -87,7 +87,6 @@
     "Song that defines your academic situation": [
       "Lode lag gaye",
       "https://youtu.be/Uz-sPvopjvY?si=rodjaLoizYr5QN1X"
-
     ],
     "Your favourite senior name": ["Shashank"],
     "College crush": ["None"],
@@ -122,6 +121,33 @@
     "Atcoder id": "dear_comrade_",
     "Discord username": "spotnewmoon",
     "Instagram": "_deepanshu_soni_"
+
+  },
+
+  {
+      "Name": "Ashutosh Kumar",
+      "College": "Indian Institute of Information Technology (IIITA) Allahabad",
+      "Passout Year": "2027",
+      "Song that defines your relationship status": [
+        "Phir Se Udd Chala",
+        "https://www.youtube.com/watch?v=2mWaqsC3U7k"
+      ],
+      "Song that defines your academic situation": [
+        "aashayein",
+        "https://www.youtube.com/watch?v=bmyv0nRkDmc"
+      ],
+      "Your favourite senior name": ["Agrim Sir"],
+      "College crush": ["Pankhuri Mam :)"],
+      "Best youtube video you ever watched": [
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      ],
+      "Codeforces id": "official_ashu_tosh",
+      "Codechef id": "ashuSolver",
+      "Atcoder id": "ashuSolve",
+      "Discord username": "official_ashu_tosh",
+      "Instagram": "ashutosh_iiita"
+    }
+]
   }
 ]
 
