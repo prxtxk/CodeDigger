@@ -1,5 +1,5 @@
 [
-{
+  {
     "Name": "Ritesh Narayan Das",
     "College": "Indian Institute of Information Technology (IIITA) Allahabad",
     "Passout Year": "2027",
@@ -11,8 +11,12 @@
       "Never Gonna Give You Up (RickRoll)",
       "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     ],
-    "Your favourite senior name": ["Prakhar"],
-    "College crush": ["Madhu"],
+    "Your favourite senior name": [
+      "Prakhar"
+    ],
+    "College crush": [
+      "Madhu"
+    ],
     "Best youtube video you ever watched": [
       "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     ],
@@ -44,5 +48,32 @@
     "Atcoder id": "Sarvesh0955",
     "Discord username": "nightwarrior58",
     "Instagram": "sarvesh0955"
+  },
+  {
+    "Name": "Aayush Goyal",
+    "College": "Indian Institute of Information Technology (IIITA) Allahabad",
+    "Passout Year": "2027",
+    "Song that defines your relationship status": [
+      "Dynamite",
+      "https://www.youtube.com/watch?v=gdZLi9oWNZg"
+    ],
+    "Song that defines your academic situation": [
+      "APT.",
+      "https://www.youtube.com/watch?v=ekr2nIex040"
+    ],
+    "Your favourite senior name": [
+      "Malay"
+    ],
+    "College crush": [
+      ""
+    ],
+    "Best youtube video you ever watched": [
+      "https://www.youtube.com/watch?v=OGGmB5yllxg"
+    ],
+    "Codeforces id": "semicolon18",
+    "Codechef id": "semicolon18",
+    "Atcoder id": "semicolon18",
+    "Discord username": "destroyer_9987",
+    "Instagram": "ayushgoyal7325"
   }
 ]
