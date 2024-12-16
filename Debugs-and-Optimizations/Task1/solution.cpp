@@ -4,54 +4,53 @@ using namespace std;
 #define sz(x) ((long long)(x).size())
 #define vl vector<ll>
 
-#include<ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;
-typedef tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update> indexed_multiset;
-// *s.find_by_order, *s.order_of_key --> O(logn)
-void myerase(indexed_multiset &t, int v){
-    int rank = t.order_of_key(v);
-    indexed_multiset::iterator it = t.find_by_order(rank);
-    t.erase(it);
-}
+int n, k;
 
-ll n,k;
-int ans;
-
-void func(ll i,vl &a,indexed_multiset &s){
-    if(i>=sz(a)) return;
-    if(i==sz(a)-1)
-    {
-        s.insert(a[i]);
-        ll n=sz(s);
-        ans = max(ans,*s.find_by_order((n+1)/2 -1));
-        myerase(s,a[i]);
-
-        if(k==1){
-            n=sz(s);
-            ans = max(ans,*s.find_by_order((n+1)/2 -1));
+bool check(ll m,vl &a,vl &dp,vl &b) {
+    for(ll i=0;i<n;i++){
+        if(a[i]>=m){
+            b[i]=1;
+        } 
+        else{
+            b[i]=-1;
         }
-        return;
     }
 
-    //choose cur
-    s.insert(a[i]);
-    func(i+1,a,s);
-    myerase(s,a[i]);
-
-    //choose after removing 
-    func(i+k,a,s);
+    dp[0] = b[0];
+    for(ll i=1;i<n;i++){
+        if(i%k==0){
+            dp[i]=max(dp[i-k],b[i]);
+        } 
+        else{
+            dp[i]=dp[i-1]+b[i];
+            if(i>k){
+                dp[i]=max(dp[i],dp[i-k]);
+            }
+        }
+    }
+    return dp[n-1] > 0;
 }
+
 
 void solve()
 {
     cin>>n>>k;
     vl a(n);
-    for(ll i=0;i<n;i++){
+    for(ll i=0;i<n;i++) {
         cin>>a[i];
     }
-    indexed_multiset s;
-    func(0,a,s);
-    cout<<ans<<endl;
+    vl dp(n,0),b(n,0);
+    ll l=1,r=1e9;
+    while(l<=r){
+        ll m =(l+r)/2;
+        if(check(m,a,dp,b)){
+            l=m+1;
+        } 
+        else{
+            r=m-1;
+        }
+    }
+    cout<<r<<endl;
 }
 
 int main()
