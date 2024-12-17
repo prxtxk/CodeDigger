@@ -1,5 +1,5 @@
 			                          AARYAN AGAIN
-You are given a cake which is a polygon of size n with a cherry at one of its edges.
+You are given a cake which is a polygon of size n with a cherry at one of its vertices.
 
 You are given an array A which defines the deliciousness of the corresponding vertices.
 
