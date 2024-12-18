@@ -1,0 +1,4 @@
+For calculating maxx, we can sort the given string x using a comparator function where the priority is given as F>E>D…>A>9>8>7…>1>0.
+To find the minx, we can reverse maxx. If minx contains leading zeros, we can use a for loop to find the position of the first non zero number and swap it with the first position of minx.
+To compare the hexadecimal numbers, we can convert them to integers and then compare them.
+We need to check for “0” manually as it is the only number having leading zeros.
