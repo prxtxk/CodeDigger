@@ -15,7 +15,7 @@ for( int i=0; i<n; i++){
     if(arr[i]==0){
         cir++;
     }
-    else if(arr[i]<=v && arr[i]>=0){
+    else if(arr[i]<=v && arr[i]>0){
         ell++;
     }
     else if(arr[i]>v){
