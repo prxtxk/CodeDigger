@@ -9,7 +9,7 @@ Your task is to determine the least second at which maximum number of Bulbs are 
 
 Input
 The first line contains the number of test cases t (1≤t≤10000)
-The one and only line of each test case contains two integers n and x (1≤n≤1018;1≤x≤n)
+The one and only line of each test case contains two integers n and x (1≤n≤10^18;1≤x≤n)
  — the number of Bulbs and the Bulb which is ON initially.
 Output
 output a single integer: the least second at which maximum number of Bulbs are turned ON.
