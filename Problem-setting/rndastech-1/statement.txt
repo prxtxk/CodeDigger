@@ -3,3 +3,28 @@ Hex Sort
 
 Problem Statement
 A hexadecimal number consists of numbers 0-9 and letters A-F, where A = 10, B = 11,..., F = 15. Given a hexadecimal number x, let the minimum and maximum number formed possible by rearranging all the hexadecimal digits without adding or removing any digit and without containing leading zeros (except the number 0) be denoted by minx and maxx respectively. Is |maxx - x| > |x - minx|?
+
+
+Input Format + Constraints
+The first line contains an integer t (1≤t≤10^5) — the number of test cases.
+The only line of each test case contains a string x (1<= x.size <=10) consisting of digits ‘0’ - ‘9’ and letters ‘A’ - ‘F’.
+
+Output Format
+For each test case, print on one line "YES" if |maxx - x| > |x - minx|. Otherwise, print "NO".
+
+
+Explanation:
+For 1st test case,
+minx = ABCD
+maxx = DCBA
+maxx - x = 30ED
+x - minx = 0
+Therefore, maxx - x > x - minx
+
+For 2nd test case,
+minx = 8
+maxx = 8
+maxx - x = 0
+x - minx = 0
+Therefore, maxx - x = x - minx
+
