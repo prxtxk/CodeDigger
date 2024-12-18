@@ -4,7 +4,7 @@ using namespace std;
 
 
 void solve(){
-  int x;
+  int n,x;
   cin>>n>>x;
   int ans=0;
   ans+=min(x-1,n-x);
