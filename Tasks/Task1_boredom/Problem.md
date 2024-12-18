@@ -1,5 +1,5 @@
 			                          AARYAN AGAIN
-You are given a cake which is a polygon of size n with a cherry at one of its edges.
+You are given a cake which is a polygon of size n with a cherry at one of its vertices.
 
 You are given an array A which defines the deliciousness of the corresponding vertices.
 
@@ -19,7 +19,7 @@ You are then given q queries each containing 2 numbers l and r and signifying th
 
 If l<=r : there is a cherry at one of the vertices l, l+1, .. ,r-1, r 
 
-If l>r : there is a cherry at one of the vertices r, r+1, ..,n,.. ,l-1,l 
+If l>r : there is a cherry at one of the vertices l, l+1, ..,n,.. ,r-1,r 
 
 Your task is to find the maximum deliciousness Aaryan can offer.
 
