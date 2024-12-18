@@ -1,0 +1,5 @@
+Title
+Hex Sort
+
+Problem Statement
+A hexadecimal number consists of numbers 0-9 and letters A-F, where A = 10, B = 11,..., F = 15. Given a hexadecimal number x, let the minimum and maximum number formed possible by rearranging all the hexadecimal digits without adding or removing any digit and without containing leading zeros (except the number 0) be denoted by minx and maxx respectively. Is |maxx - x| > |x - minx|?
