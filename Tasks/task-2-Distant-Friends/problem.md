@@ -14,3 +14,14 @@ The final K lines indicate the locations of the K friends, each specified in ter
  OUTPUT FORMAT : 
  
 Print the number of pairs of friends that are distant.
+
+SAMPLE INPUT:
+3 3 3
+2 2 2 3
+3 3 3 2
+3 3 2 3
+3 3
+2 2
+2 3
+SAMPLE OUTPUT:
+2
