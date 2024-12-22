@@ -1,0 +1,13 @@
+Find the Perfect Height
+You are given an array of integers A of size N, representing the heights of buildings in a city. To improve the city's skyline aesthetics, you want all buildings to be of the same height H. You can either:
+
+Reduce the height of a building by any positive amount (including zero) at a cost equal to the amount reduced.
+Increase the height of a building by any positive amount (including zero) at a cost of twice the amount increased.
+You are tasked with determining the minimum cost to make all buildings of the same height. You are free to choose any height H (an integer) such that 0 ≤ H ≤ max(A).
+
+Input:
+The first line contains an integer T(1 ≤ T ≤ 10^3) - the number of test cases
+The second line contains an integer N (1 ≤ N ≤ 10^4) — the number of buildings.
+The third line contains N integers A[i] (0 ≤ A[i] ≤ 10^9) — the heights of the buildings.
+Output:
+Output a single integer — the minimum cost required to make all buildings of the same height.
