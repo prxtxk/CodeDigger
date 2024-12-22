@@ -1,0 +1,6 @@
+Key Idea:
+Use binary search to find the optimal height H that minimizes the cost.
+For a fixed H, calculate the cost:
+Reduction cost: Sum of differences where A[i] > H.
+Increase cost: Sum of twice the differences where A[i] < H.
+Binary search on the possible values of H in the range [0, max(A)].
