@@ -1,0 +1,3 @@
+The problem can be seen as the problem to find the numbers in an array which are 0, which are greater than 0 and smaller than v, and which are greater than v.
+For that make three integers initialised to 0. Try to increase the integers by one when the corresponding number is found. This will traverse the array and take care
+of the number of circles, parabola and ellipses.
