@@ -29,3 +29,13 @@ All pairs of (Ai , Bi) are distinct.
 
 OUTPUT FORMAT
 Print the number of possible ways to complete the procedure, modulo 1e9+7.
+
+
+TASK CASE 1
+INPUT
+2 3
+1 2
+1 4
+2 3
+OUTPUT
+1
