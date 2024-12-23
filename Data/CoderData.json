@@ -1185,7 +1185,30 @@
     "Instagram": "adityaagg4689"
   },
   {
-     "Name": "Aditya Pachauri",
+     "Name": "Sharuka",
+    "College": "St.Josep's College of Engineering, Chennai",
+    "Passout Year": "2027",
+    "Song that defines your relationship status": [
+      "Yeh ishq hai"
+    ],
+    "Song that defines your academic situation": [
+      "Tuta hua saaz hu main"
+    ],
+    "Your favourite senior name": [
+      "Shameema ma'am"
+    ],
+    "College crush": [
+      "None"
+    ],
+    "Best youtube video you ever watched": [
+      "none"
+    ],
+    "Codechef id": "Sharuka",
+      "Codeforces id": "Sharuka",
+    "Instagram": "-"
+  },
+  {
+      "Name": "Aditya Pachauri",
     "College": "Indian Institute of Information Technology (IIITA) Allahabad",
     "Passout Year": "2028",
     "Song that defines your relationship status": [
@@ -1206,5 +1229,5 @@
     "Codechef id": "much_bats_51",
     "Codeforces id": "Aditya_Pachauri",
     "Instagram": "nil"
-  }
+  },
 ]
