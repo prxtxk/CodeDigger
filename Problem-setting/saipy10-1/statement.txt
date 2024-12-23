@@ -1,0 +1,79 @@
+Problem:
+Dividing a Network into Subnets
+
+A company uses a network to connect computers and devices. The network is represented by an IP address (a unique identifier for a network) and a subnet mask (a way to divide the network into smaller parts). Your task is to determine two things:
+
+1. How many smaller networks (subnets) can be created from the given network.
+2. How many devices (usable hosts) can connect to each smaller network.
+
+Understanding the Basics:
+An IP address looks like `192.168.1.0`. It’s a way to identify devices on a network, like addresses in a city. The subnet mask, written as `/m` (e.g., `/24`), tells you how much of the IP address is reserved for the network and how much is available for devices.
+
+Example:
+For the network `192.168.1.0/24`:
+- The `/24` means the first 24 bits are reserved for identifying the network. The remaining bits (out of 32) are for identifying devices.
+
+Splitting a Network:
+When dividing a network into smaller subnets:
+- More subnets mean fewer devices per subnet.
+- The number of bits borrowed from the remaining device bits determines how many subnets can be created.
+
+Input:
+First line containing number of cases followed by 
+A single line containing:
+- An IP address and a subnet mask in the format `IP/m`.  
+  Example: `192.168.1.0/26`.
+
+Output:
+Two integers:
+1. The number of subnets created by dividing the network.
+2. The number of usable devices (hosts) in each subnet.
+Incase of Invalid IP output -1.
+
+Explanation of the Problem:
+1. Number of Subnets:
+   Each bit borrowed for subnetting doubles the number of subnets. For example:
+   - Borrowing 2 bits creates 2^2 = 4  subnets.
+
+2. Number of Usable Hosts:
+   The remaining bits after subnetting determine the number of devices per subnet. For example:
+   - If 6 bits remain, the total is 2^6 - 2 = 62  usable hosts (subtracting 2 for network and broadcast addresses).
+
+
+Example 1:
+
+Input:
+1
+192.168.1.0/26
+
+Output:
+4 62
+
+Explanation:
+1. The original network is Class C, so the default subnet mask is `/24`.
+2. The given subnet mask is `/26`, meaning n = 26 - 24 = 2  bits are borrowed.
+   - Number of Subnets: 2^2 = 4 .
+3. After borrowing 2 bits, h = 32 - 26 = 6  bits remain for devices.
+   - Usable Hosts per Subnet: 2^6 - 2 = 62 .
+
+
+Example 2:
+
+Input:
+1
+10.0.0.0/20
+
+Output:
+16 4094
+
+Explanation:
+1. The original network is Class A, so the default subnet mask is `/8`.
+2. The given subnet mask is `/20`, meaning n = 20 - 8 = 12  bits are borrowed.
+   - Number of Subnets: 2^{12} = 4096 .
+3. After borrowing 12 bits, h = 32 - 20 = 12  bits remain for devices.
+   - Usable Hosts per Subnet: 2^{12} - 2 = 4094 .
+
+Note:
+This problem can be solved without prior networking knowledge by using the formulas:
+1. Number of Subnets: 2^n , where n  is the number of bits borrowed.
+2. Usable Hosts per Subnet: 2^h - 2 , where h  is the number of bits left for devices.
