@@ -1,0 +1,26 @@
+Problem Recap:
+You are given an IP address and a subnet mask in the format IP/m.
+Your job is to calculate:
+
+The number of subnets that can be created.
+The number of usable hosts (devices) per subnet.
+
+Key Concepts:
+Subnet Mask: Determines how many bits in the IP address are reserved for identifying the network.
+
+For example, /24 means the first 24 bits are for the network, and the remaining 32−24=8 bits are for identifying devices.
+Borrowing Bits: When creating subnets, we borrow bits from the "device portion" of the address. Each borrowed bit doubles the number of subnets but reduces the number of devices per subnet.
+
+Formulas:
+
+Number of Subnets:
+
+Number of Subnets = 2^𝑛
+Where 
+n = (new subnet mask) - (default subnet mask).
+
+Usable Hosts per Subnet:
+
+Usable Hosts per Subnet=2^h −2
+Where 
+h = (remaining host bits) = 32−new subnet mask.
