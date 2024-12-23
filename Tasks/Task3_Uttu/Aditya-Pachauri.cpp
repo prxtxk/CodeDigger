@@ -1,17 +1,16 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
-void sort(vector<int>& a) {
-    int n = a.size();
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (a[j] > a[j + 1]) {
-                swap(a[j], a[j + 1]);
-            }
-        }
-    }
-}
+// void sort(vector<int>& a) {
+//     int n = a.size();
+//     for (int i = 0; i < n - 1; i++) {
+//         for (int j = 0; j < n - i - 1; j++) {
+//             if (a[j] > a[j + 1]) {
+//                 swap(a[j], a[j + 1]);
+//             }
+//         }
+//     }
+// }
 
 int main() {
     int n, x;
@@ -24,7 +23,7 @@ int main() {
         sorted_arr[i] = arr[i];
     }
     
-    sort(arr);
+    sort(arr.begin(),arr.end());
     bool flag = true;
     
     for (int i = n - x; i < x; i++) {
