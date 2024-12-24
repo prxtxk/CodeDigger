@@ -27,7 +27,7 @@ void solve() {
     if (x >= n && !is_sorted(all(a))) 
         ans = 0;
 
-    for(int i = n - x; i < min(n,x); i++)
+    for(int i = n - x; i < x; i++)
         ans &= v[i] == a[i];
         
     if (ans) yes;
