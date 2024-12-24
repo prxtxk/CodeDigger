@@ -2,7 +2,7 @@
 
 Ritesh and Rachit recently became experts on Codeforces. Ought of happiness, they decided to throw a party. They prepared a list of their common friends.
 
-The list consists of N people(N is even).  But they do not want their friends to be lonely.
+The list consists of 2N people.  But they do not want their friends to be lonely.
 So they went to Seer Uttu. Uttu gave them a list of M pairs. Each pair contains 2 numbers i and j denoting i and j are good friends.
 
 So they perform the following operations N times to find N pairs:
@@ -14,7 +14,7 @@ Find the number, modulo 1e9+7, of possible ways to do the operation N times. Two
 
 INPUT FORMAT
 
-First line contains 2 numbers, number of friends N(even) and M (size of list Seer Uttu provides).
+First line contains 2 numbers, N and M (size of list Seer Uttu provides).
 
 Next M lines contains two integers each,
 
