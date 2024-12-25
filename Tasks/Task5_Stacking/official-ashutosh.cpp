@@ -30,17 +30,19 @@ void solve() {
     int n, k;
     cin >> n >> k;
 
-    vector<int> mp(n+1, 0);
+    vector<int> mp(n, 0);
     while(k--){
         int a, b;
         cin >> a >> b;
         mp[a]++;
-        mp[b+1]--;
+        if(b < n) mp[b+1]--;
     }
 
     for(int i=1; i<=n; i++){
         mp[i] += mp[i-1];
     }
+
+    // mp.pop();
 
     sort(mp.begin(), mp.end());
     cout << mp[n/2+1] << endl;
