@@ -30,7 +30,7 @@ void solve() {
     int n, k;
     cin >> n >> k;
 
-    vector<int> mp(n, 0);
+    vector<int> mp(n+1, 0);
     while(k--){
         int a, b;
         cin >> a >> b;
