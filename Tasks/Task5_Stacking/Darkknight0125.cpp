@@ -11,7 +11,7 @@ int main() {
 		int N, K;
 		cin>>N>>K;
 
-		vector<int> prefixSum(N + 2, 0);
+		vector<long long> prefixSum(N + 2, 0);
 
 		for(int i = 0; i < K; i++){
 			int l, r;
